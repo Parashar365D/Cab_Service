@@ -1,38 +1,180 @@
-.App {
+#cabservice {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/public/assets/Home_Img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+}
+
+.info {
   text-align: center;
+  color: rgb(255, 255, 255);
+  margin-left: -40vmin;
+  font-weight: 600;
+  font-size: large;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.info2{
+  margin: 3rem;
+  width: 550px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.About_title{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: red;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.leftIcon{
+  margin-left: 3rem;
+}
+
+.modal-header {
+  background-color: #FDEE00;
+}
+
+.modal-body {
+  background-color: #FFCC33;
+  color: #000000;
+}
+
+.btn {
+  width: 45%;
+  border-color: black;
+  border-radius: 5rem;
+  color: #000000;
+}
+.btn:hover{
+  color: #000000;
+}
+
+h2 {
+  margin: 1rem;
+}
+
+.container {
+  max-width: 100%;
+}
+
+.c1 {
+  background-color: #EF9B0F;
+  color: #000000;
+  height: 320px;
+  border-radius: 2rem;
+  margin: 2rem;
+  box-shadow: 12px 12px 5px #dba13d;
+}
+
+.f1 {
+  font-size: 2rem;
+  margin-top: 30px;
+  border-radius: 10rem;
+  background-color: #E4D00A;
+  color: black;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+#services {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://static.vecteezy.com/system/resources/previews/037/350/076/non_2x/ai-generated-a-city-that-is-filled-with-taxis-on-a-rainy-day-free-photo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 900px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.ser{
+  font-weight: bold;
+  font-size: larger;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card{
+  height: 320px;
+  width: 350px;
+  border-radius: 1rem;
+}
+
+.card img{
+  height: 220px;
+  padding: 20px;
+}
+
+.col-md-3{
+  margin: 3rem;
+}
+
+.img2{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.808)),url(/public/assets/img2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 800px;
+}
+
+h3{
+  margin-top: 1rem;
+}
+
+#footerImg{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.808)),url(https://w0.peakpx.com/wallpaper/692/958/HD-wallpaper-taxi-rank-cab-rank-taxi-car.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+  color: white;
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 2rem;
+}
+
+.img1Info {
+  display: block;
+  transition: opacity 0.2s ease-in-out
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: rgb(0, 0, 0);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.img-container:hover .img1Info {
+  opacity: 0.5;
+  margin-left: 4px;
+}
+
+.img-container:hover .overlay {
+  opacity: 1;
+}
+
+.checked {
+  color: orange;
+}
+
+.last{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.808)),url(https://i.pinimg.com/736x/d8/91/49/d891496ddd80934ce253a3f1928d9026.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 400px;
+  color: white;
+}
+
+.Contact_US{
+  border-radius: 2rem;
+  height: 450px;
+  width: 550px;
+  background-color: #FFCC33;
+}
+
+.cf{
+  margin-right: 18rem;
 }
