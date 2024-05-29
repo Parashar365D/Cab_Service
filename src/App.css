@@ -1,32 +1,34 @@
-#cabservice {
+/* navbar css start here */
+#offcanvasNavbar{
+  height: 500px;
+  width: 75%;
+  border-radius: 1rem;
+}
+
+.offcanvas-header{
+  height: 80px;
+  margin-bottom: -1.3rem;
+}
+
+.offcanvas-header a{
+  margin-left: -2rem;
+}
+
+.offcanvas-body{
+  font-size:large;
+  font-weight: bold;
+}
+/* navbar css end here */
+
+
+/* home section css start here */
+.firstSection {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/public/assets/Home_Img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 550px;
-}
-
-.info {
-  text-align: center;
-  color: rgb(255, 255, 255);
-  margin-left: -40vmin;
-  font-weight: 600;
-  font-size: large;
-}
-
-.info2{
-  margin: 3rem;
-  width: 550px;
-}
-
-.About_title{
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  font-weight: 600;
-  color: red;
-}
-
-.leftIcon{
-  margin-left: 3rem;
+  background-attachment: fixed;
+  width: 100%;
+  height: 350px;
 }
 
 .modal-header {
@@ -39,31 +41,143 @@
 }
 
 .btn {
-  width: 45%;
+  width: 170px;
+  height: 40px;
   border-color: black;
+  background-color: red;
   border-radius: 5rem;
   color: #000000;
+  font-size: 1rem;
 }
+
 .btn:hover{
   color: #000000;
+  border-color: black;
+  background-color: red;
 }
 
-h2 {
-  margin: 1rem;
+.info {
+  color: rgb(255, 255, 255);
+  padding-top: 130px;
+  width: auto;
 }
 
-.container {
-  max-width: 100%;
+
+.secondSection{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
-.c1 {
+.card1 {
   background-color: #EF9B0F;
   color: #000000;
-  height: 320px;
   border-radius: 2rem;
-  margin: 2rem;
-  box-shadow: 12px 12px 5px #dba13d;
+  width: 20rem;
+  margin: 1rem;
+  box-shadow: 10px 10px 5px #dba13d;
 }
+/* home section css end here */
+
+
+/* service section css start here */
+#services {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://static.vecteezy.com/system/resources/previews/037/350/076/non_2x/ai-generated-a-city-that-is-filled-with-taxis-on-a-rainy-day-free-photo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: auto;
+  color: white;
+}
+
+.serviceSection1 h1{
+  padding-top: 3rem;
+}
+
+.serviceSection1 p{
+  padding-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+.serviceSection2{
+  padding: 1rem;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.card2{
+  color: #000000;
+  width: 23rem;
+  height: 21rem;
+  margin: 1rem;
+  border-radius: 2rem;
+}
+
+.card2 img{
+  height: 220px;
+  padding: 20px;
+}
+/* service section css end here */
+
+/* about section css start here */
+#about_us {
+  padding: 20px;
+}
+
+.aboutSection1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aboutSection1, .aboutSection2 {
+  flex: 1 1 50%;
+  padding: 10px;
+}
+
+.aboutSection1 h1{
+  margin: 10px 0;
+  color: red;
+}
+
+.aboutSection1 h2, .aboutSection1 p, .aboutSection1 .btn {
+  margin: 10px 0;
+}
+
+.aboutSection2 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.aboutSection2 img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .aboutSection1, .aboutSection2 {
+      flex: 1 1 100%;
+  }
+
+  .aboutSection2 .container {
+      margin-top: 20px;
+  }
+}
+
+
+.aboutSection3{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.808)),url(/public/assets/img2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 800px;
+}
+
+.leftIcon{
+  margin-left: 3rem;
+}
+/* about section css end here */
 
 .f1 {
   font-size: 2rem;
@@ -75,46 +189,7 @@ h2 {
   cursor: pointer;
 }
 
-#services {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://static.vecteezy.com/system/resources/previews/037/350/076/non_2x/ai-generated-a-city-that-is-filled-with-taxis-on-a-rainy-day-free-photo.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 900px;
-  color: white;
-}
 
-.ser{
-  font-weight: bold;
-  font-size: larger;
-}
-
-.card{
-  height: 320px;
-  width: 350px;
-  border-radius: 1rem;
-}
-
-.card img{
-  height: 220px;
-  padding: 20px;
-}
-
-.col-md-3{
-  margin: 3rem;
-}
-
-.img2{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.808)),url(/public/assets/img2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 800px;
-}
-
-h3{
-  margin-top: 1rem;
-}
 
 #footerImg{
   background-image: linear-gradient(rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.808)),url(https://w0.peakpx.com/wallpaper/692/958/HD-wallpaper-taxi-rank-cab-rank-taxi-car.jpg);

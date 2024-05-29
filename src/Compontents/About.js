@@ -4,19 +4,22 @@ function About() {
   return (
     <>
       <div id="about_us">
-        <div className="container d-flex">
-          <div className='info2'>
-            <h1 className="About_title">About Us</h1>
-            <h1>Best Car Rental & Booking Service In Gwalior</h1>
-            <p style={{ color: "gray", marginTop: "1rem" }}>Welcome to Gwalior Cab Service, where every journey is an opportunity to experience the pinnacle of transportation excellence. With a commitment to providing the best service in Gwalior, we stand as a testament to reliability, comfort, and customer satisfaction.</p>
-            <button className='btn' style={{ backgroundColor: "#E9D66B", height: "40px", marginTop: "1rem" }}>Call Now +91 9109579144</button>
+        <div className='row gx-0'>
+          <div className="aboutSection1 col">
+            <h1>About Us</h1>
+            <h2>Best Car Rental & Booking Service In Gwalior</h2>
+            <p>Welcome to Gwalior Cab Service, where every journey is an opportunity to experience the pinnacle of transportation excellence. With a commitment to providing the best service in Gwalior, we stand as a testament to reliability, comfort, and customer satisfaction.</p>
+            <button className='btn'>Call Now</button>
           </div>
-          <div className='info_img' style={{ maxWidth: "100%", marginTop: "7rem", marginLeft: "3rem" }}>
-            <img src={"/assets/thar.png"} alt="thar" style={{ marginLeft: "1rem" }} />
+          <div className='aboutSection2 col'>
+            <div className="container">
+              <img src="/assets/thar.png" alt="thar" />
+            </div>
           </div>
         </div>
       </div>
-      <div className="img2">
+
+      <div className="aboutSection3">
         <div className="container text-center">
           <h2 style={{ paddingTop: "3rem", color: "white", fontWeight: "700" }}>"Gwalior Cab Service Your Best Choice for Reliable, Punctual, and Comfortable Journeys!"</h2>
         </div>
@@ -110,7 +113,7 @@ function About() {
       <div className="container text-center my-5">
         <h1>What Do Our Clients Say?</h1>
       </div>
-      <div className="d-flex flex-wrap text-center my-3" style={{ paddingLeft: "2rem", maxWidth: "100%", gap: "2rem", justifyContent:"center" }}>
+      <div className="d-flex flex-wrap text-center my-3" style={{ paddingLeft: "2rem", maxWidth: "100%", gap: "2rem", justifyContent: "center" }}>
         <div className="col-sm my-2">
           <p>“Effortless travel with Gwalior Cab! Their user-friendly booking,and polite drivers make them stand out. My first choice!”</p>
           <h4>Rohit Kapoor</h4>
