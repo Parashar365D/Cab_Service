@@ -4,18 +4,18 @@ function Navbar() {
 
     const [activeLink, setActiveLink] = useState('Home');
     const handleLinkClick = (link) => {
-        setActiveLink(link);
-    };
+        setActiveLink(link);  
+    }
 
     return (
-        <nav className="navbar navbar-expand-lg bg-dark bg-body-tertiary">
+        <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid">
                 <a className="navbar-brand mx-auto" href="/Cab_Service">
                     <img src={"/assets/Logo.jpg"} alt="Logo" width="200" height="70" className="d-inline-block align-text-top mx-2" />
                 </a>
-                <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <a className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
-                </button>
+                </a>
                 <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div className="offcanvas-header">
                         <a className="navbar-brand" href="/Cab_Service">
