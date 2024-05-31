@@ -8,7 +8,7 @@ function Navbar() {
     };
 
     return (
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <nav className="navbar navbar-expand-lg bg-dark bg-body-tertiary">
             <div className="container-fluid">
                 <a className="navbar-brand mx-auto" href="/Cab_Service">
                     <img src={"/assets/Logo.jpg"} alt="Logo" width="200" height="70" className="d-inline-block align-text-top mx-2" />
