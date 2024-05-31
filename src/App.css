@@ -171,85 +171,350 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 800px;
-}
-
-.leftIcon{
-  margin-left: 3rem;
-}
-/* about section css end here */
-
-.f1 {
-  font-size: 2rem;
-  margin-top: 30px;
-  border-radius: 10rem;
-  background-color: #E4D00A;
-  color: black;
-  padding: 1rem;
-  cursor: pointer;
-}
-
-
-
-#footerImg{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.808)),url(https://w0.peakpx.com/wallpaper/692/958/HD-wallpaper-taxi-rank-cab-rank-taxi-car.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 500px;
+  height: auto;
   color: white;
+  padding: 20px;
+}
+
+.aboutSection3 .container {
+  margin-bottom: 20px;
+}
+
+.aboutSection3 .row {
+  align-items: center;
+}
+
+.aboutSection3 .col { 
+  flex: 1 1 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutSection3 .iconBox {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.aboutSection3 .image {
+  flex: 1 1 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutSection3 .image img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .aboutSection3 .col, .aboutSection3 .image {
+      flex: 1 1 100%;
+  }
+
+  .aboutSection3 .icon-Box {
+      margin: 10px 0;
+  }
+
+  .aboutSection3 .image {
+      margin: 20px 0;
+  }
+}
+
+.aboutSection4 {
+  text-align: center;
+  padding: 20px;
+}
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  flex: 1;
+  margin: 10px;
+  max-height: 600px;
 }
 
 .img-container {
   position: relative;
   overflow: hidden;
-  border-radius: 2rem;
+  height: 100%;
 }
 
-.img1Info {
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: block;
-  transition: opacity 0.2s ease-in-out
+  transition: transform 0.3s ease;
 }
 
 .overlay {
   position: absolute;
   bottom: 0;
   left: 0;
-  right: 0;
-  color: rgb(0, 0, 0);
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  padding: 10px;
+  text-align: center;
 }
 
-.img-container:hover .img1Info {
-  opacity: 0.5;
-  margin-left: 4px;
+.img-container:hover img {
+  transform: translateX(5px);
 }
 
 .img-container:hover .overlay {
-  opacity: 1;
+  transform: translateY(0);
+}
+
+.gallery-container .gallery-item {
+  height: 600px;
+}
+
+@media (max-width: 992px) {
+  .gallery-row {
+      flex-direction: column;
+  }
+  .gallery-container .gallery-item {
+      height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-container .gallery-item {
+      height: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery-container .gallery-item {
+      height: 120px;
+  }
+}
+
+.aboutSection4 {
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.review {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  margin: 15px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.review p {
+  font-style: italic;
+  color: #555;
+}
+
+.review h4 {
+  margin-top: 15px;
+  font-weight: bold;
 }
 
 .checked {
-  color: orange;
+  color: #ffcc00;
 }
 
-.last{
+@media (max-width: 768px) {
+  .review {
+      margin-bottom: 20px;
+  }
+}
+/* about section css end here */
+
+/* icon css start here */
+.f1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-radius: 10rem;
+  background-color: #E4D00A;
+  color: black;
+  padding: 1rem;
+  cursor: pointer;
+}
+/* icon css end here */
+
+/* contact section css start here */
+.contactSection{
   background-image: linear-gradient(rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.808)),url(https://i.pinimg.com/736x/d8/91/49/d891496ddd80934ce253a3f1928d9026.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 400px;
+  height: 300px;
   color: white;
 }
 
-.Contact_US{
-  border-radius: 2rem;
-  height: 450px;
-  width: 550px;
-  background-color: #FFCC33;
+.contactSection h2{
+  text-align: center;
+  padding-top: 3rem;
 }
 
-.cf{
-  margin-right: 18rem;
+.contactSection p{
+  text-align: center;
+  font-weight: 600;
+  height: 1rem;
 }
+
+.contactSection .btn{
+  width: 250px;
+  margin-top: 1rem;
+}
+
+.contactSection1 {
+  padding: 4rem 0;
+}
+
+.contactSection1 h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: red;
+}
+
+.contactSection1 p {
+  font-size: 1.25rem;
+}
+
+.contactInfo h4{
+  font-size: 1.5rem;
+}
+
+.contactInfo p{
+  font-size: 1rem;
+}
+
+.contactSection2 i{
+  font-size: 35px;
+}
+
+.contactForm .form-label {
+  font-size: 1.1rem;
+}
+
+.contactForm .btn {
+  font-size: 1.1rem;
+  width: 200px;
+  margin-top: 2rem;
+}
+
+.contactInfo .d-flex {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .contactInfo {
+      text-align: center;
+  }
+
+  .contactForm {
+      padding: 2rem;
+  }
+
+  .contactForm .form-label,
+  .contactForm .btn {
+      font-size: 1rem;
+  }
+
+  .contactInfo h4 {
+      font-size: 1.25rem;
+  }
+
+  .contactInfo p {
+      font-size: 0.9rem;
+  }
+
+  .contactInfo .d-flex {
+      justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .contactSection1 h1 {
+      font-size: 2rem;
+  }
+
+  .contactSection1 p {
+      font-size: 1rem;
+  }
+
+  .contactInfo h4, .contactForm h1 {
+      font-size: 1.25rem;
+  }
+
+  .contactForm .form-label,
+  .contactForm .btn {
+      font-size: 0.9rem;
+  }
+}
+/* contact section css end here */
+
+/* footer section css start here */
+#footerImg{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.808)),url(https://w0.peakpx.com/wallpaper/692/958/HD-wallpaper-taxi-rank-cab-rank-taxi-car.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: auto;
+  color: white;
+}
+
+#footerImg h1{
+  color: red;
+  padding-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  #footerImg .col-sm {
+      flex-basis: 100%;
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 2rem;
+  }
+  
+  #footerImg .col-sm h1 {
+      margin-bottom: 1rem;
+  }
+  
+  #footerImg .col-sm i {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 0.5rem;
+  }
+}
+
+.footer {
+  background-color: blue;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer h6 {
+  margin-bottom: 10px;
+}
+/* footer section css end here */
